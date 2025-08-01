@@ -1,25 +1,233 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AgendaLummo</title>
-    <meta property="og:image" content="/logo.png" />
-    <meta name="description" content="Un proyecto desarrollado por Lummo para todas esas personas que necesitan una nueva manera" />
-    <meta name="author" content="Lummo" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Lummoo - Maneja la reservación de citas de tu negocio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">  
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="#" class="nav__logo-link">Core Lummoo</a>
+            </div>
+            <!-- <ul class="nav__links">
+                <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+                <li><a href="#servicios" class="nav__link">Servicios</a></li>
+                <li><a href="#nosotros" class="nav__link">Conócenos</a></li>
+            </ul> -->
+            <a href="/demo" class="nav__cta">Ver demo</a>
+            <button class="nav__toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
 
-    <meta property="og:title" content="AgendaLummo" />
-    <meta property="og:description" content="Un proyecto desarrollado por Lummo para todas esas personas que necesitan una nueva manera" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/logo_claro.png" />
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        La manera más <span class="hero__title--highlight">simple</span> de gestionar tus reservas
+                    </h1>
+                    <p class="hero__description">
+                        Tus reservas, clientes y todo un sistema accesible desde cualquier dispositivo. 
+                        Automatiza tu negocio y enfócate en lo que realmente importa.
+                    </p>
+                    <button class="hero__cta">
+                        <span>Lista de espera</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="/logo_claro.png" />
-  </head>
+        <!-- Dashboard Preview -->
+        <section class="dashboard">
+            <div class="container">
+                <div class="dashboard__wrapper">
+                    <img src="./images/dashboard.png" 
+                         alt="Dashboard de Core Lummoo" 
+                         class="dashboard__image">
+                </div>
+            </div>
+        </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="features__item">
+                    <div class="features__content">
+                        <h2 class="features__title">
+                            Agrega horarios que se adapten a tu tiempo
+                        </h2>
+                        <p class="features__description">
+                            Automatización en tus horarios, sin necesidad de publicar en todos lados, 
+                            con un solo click. Define tu disponibilidad y deja que el sistema haga el resto.
+                        </p>
+                        <ul class="features__list">
+                            <li>Configuración automática de horarios</li>
+                            <li>Sincronización en tiempo real</li>
+                            <li>Gestión de disponibilidad inteligente</li>
+                        </ul>
+                    </div>
+                    <div class="features__image">
+                        <img src="./images/horarios.png" 
+                             alt="Interfaz de horarios de Core Lummoo">
+                    </div>
+                </div>
+
+                <div class="features__item features__item--reverse">
+                    <div class="features__content">
+                        <h2 class="features__title">
+                            Genera una agenda con todas tus citas en segundos
+                        </h2>
+                        <p class="features__description">
+                            Agenda automática con horarios y detalles de tus clientes. Personaliza los 
+                            tiempos de atención y deja de preocuparte por organizar tus reservas manualmente.
+                        </p>
+                        <ul class="features__list">
+                            <li>Vista de agenda completa</li>
+                            <li>Detalles de clientes integrados</li>
+                            <li>Notificaciones automáticas</li>
+                        </ul>
+                    </div>
+                    <div class="features__image">
+                        <img src="./images/reservaciones.png" 
+                             alt="Agenda de reservaciones de Core Lummoo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">
+                        ¿Listo para automatizar la reserva de tu negocio?
+                    </h2>
+                    <p class="cta__description">
+                        Únete a cientos de negocios que ya confían en Core Lummoo para gestionar sus reservas.
+                    </p>
+                    <a href="#contacto" class="cta__button">
+                        Contactar ahora
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <img src="./images/logo-dark-mode.png" 
+                         alt="Logo de Core Lummoo" 
+                         class="footer__logo">
+                    <p class="footer__tagline">Desarrollando con confianza.</p>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Contacto</h3>
+                    <ul class="footer__list">
+                        <li><a href="mailto:lummoosoftware@gmail.com">lummoosoftware@gmail.com</a></li>
+                        <li><a href="mailto:dev.andrez18@gmail.com">dev.andrez18@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Acciones</h3>
+                    <ul class="footer__list">
+                        <li><a href="#reservar">Reservar ahora</a></li>
+                        <li><a href="#privacidad">Política de privacidad</a></li>
+                        <li><a href="#creditos">Ver créditos</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 Core Lummoo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Lista de Espera -->
+    <div class="modal" id="waitlistModal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" id="closeModal" aria-label="Cerrar modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        
+        <div class="modal__header">
+          <h2 class="modal__title">Únete a la lista de espera</h2>
+          <p class="modal__subtitle">Sé el primero en conocer cuando Core Lummoo esté disponible</p>
+        </div>
+        
+        <form class="modal__form" id="waitlistForm">
+          <div class="form__group">
+            <label for="nombre" class="form__label">Nombre completo</label>
+            <input 
+              type="text" 
+              id="nombre" 
+              name="nombre" 
+              class="form__input" 
+              placeholder="Ingresa tu nombre completo"
+              required
+            >
+            <label for="email" class="form__label">Correo eléctronico</label>
+            <input 
+              type="text" 
+              id="email" 
+              name="email" 
+              class="form__input" 
+              placeholder="Ingresa tu correo electrónico"
+              required
+            >
+            <span class="form__error" id="nombreError"></span>
+          </div>
+          
+          <button type="submit" class="form__submit" id="submitBtn">
+            <span class="submit__text">Unirme a la lista</span>
+            <div class="submit__loader" style="display: none;">
+              <div class="loader"></div>
+            </div>
+          </button>
+        </form>
+        
+        <!-- Success State -->
+        <div class="modal__success" id="successState" style="display: none;">
+          <div class="success__icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22,4 12,14.01 9,11.01"></polyline>
+            </svg>
+          </div>
+          <h3 class="success__title">¡Bienvenido a la lista!</h3>
+          <p class="success__message">Te notificaremos tan pronto como Core Lummoo esté disponible.</p>
+          <button class="success__close" id="successClose">Continuar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/supabase-js@2.0.0/dist/umd/supabase.min.js"></script> 
+    <script src="script.js"></script>
+</body>
 </html>
