@@ -347,7 +347,6 @@ body {
 
 /* Footer */
 .footer {
-  background: var(--color-surface);
   padding: 4rem 0 2rem;
   margin-top: 6rem;
 }
